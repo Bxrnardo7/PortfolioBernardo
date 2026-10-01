@@ -1,6 +1,5 @@
-const botao = document.querySelector("#hello-button");
-const mensagem = document.querySelector("#hello-message");
+﻿const botaoTema = document.querySelector("#theme-toggle");
 
-botao.addEventListener("click", () => {
-    mensagem.textContent = "Valeu por visitar meu portfólio!";
+botaoTema.addEventListener("click", () => {
+    document.body.classList.toggle("light-mode");
 });
